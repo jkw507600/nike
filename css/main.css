@@ -1,9 +1,37 @@
-.photo {
-    width: 600px;
+.hero {
+    width: 1220px;
+    padding: 0 20px;
     margin: 0 auto;
+    height: 700px;
+    position: relative;
+    background-color: var(--gray);
 }
 
-.photo img {
+.hero .photo {
+    width: 830px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.hero .photo img {
     width: 100%;
     display: block;
+}
+
+.hero .text_box {
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+}
+
+@media (max-width: 576px) {
+    .hero {
+        width: 100%;
+        margin-top: 16px;
+    }
+
+    .hero .photo {
+        width: 100%;
+    }
 }
