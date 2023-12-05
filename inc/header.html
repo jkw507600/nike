@@ -64,11 +64,21 @@
 <script>
     $('.gnb > li').hover(
         function() {
-            $(this).find('ul').stop().slideDown('fast')
+            $(this).addClass('on').find('ul').stop().slideDown('fast')
         },
         function() {
-            $(this).find('ul').stop().slideUp('fast')
+            $(this).addClass('on').find('ul').stop().slideUp('fast')
 
         }
     )
+
+    $('.bars').click(function(){
+        $('.gnb').toggleClass('active')
+
+        if($('.gnb').hasClass('acctive')){
+            $(this).find('img').attr('src','../images/icon_close.svg')
+        } else {
+            $(this).find('img').attr('src','../images/icon_bars.svg')
+        }
+    })
 </script>
