@@ -49,6 +49,28 @@
     font-size: 16px;
 }
 
+/* section-arrow */
+.section .arrows {
+    position: absolute;
+    top: -6px;
+    right: 0;
+    z-index: 1;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+} 
+
+.section .arrows i {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
 /* section_01 */
 .section_01 {
     margin-bottom: 120px;
@@ -92,27 +114,6 @@
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 20px;
-}
-
-.section_02 .arrows {
-    position: absolute;
-    top: -6px;
-    right: 0;
-    z-index: 1;
-    font-size: 24px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-} 
-
-.section_02 .arrows i {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
 }
 
 .swiper_01 .thumb {
@@ -181,7 +182,8 @@
 
 /* section_04 */
 .section_04 {
-    margin-bottom: 165px;    
+    margin-bottom: 165px;  
+    position: relative;  
 }
 
 .section_04 h2 {
@@ -199,7 +201,7 @@
 }
 
 .section_04 .list li .thumb {
-    height: 380px;
+    height: 280px;
     background-color: var(--gray);
     display: flex;
     align-items: center;
@@ -214,47 +216,24 @@
     font-weight: 600;
 }
 
-.section_04 .arrows {
-    position: absolute;
-    top: -6px;
-    right: 0;
-    z-index: 1;
-    font-size: 24px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-} 
-
-.section_04 .arrows i {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
 /* section_05 */
 .section_05 {
-    margin-bottom: 120px;    
-    text-align: center;
+    margin-bottom: 120px;
+    text-align: center;    
 }
 
-.section_05 .text_box h2 {
+.section_05 .text_box2 h2 {
     font-size: 32px;
     font-weight: 600;
     line-height: 1.2;
-
 }
-.section_05 .text_box p {
+.section_05 .text_box2 p {
     font-size: 16px;
     line-height: 1.6;
-    width: 40%;
+    width: 44%;
     margin: 30px auto 50px;
-
 }
-.section_05 .text_box .btn2 {
+.section_05 .text_box2 .btn2 {
     display: block;
     width: 180px;
     height: 40px;
@@ -264,6 +243,7 @@
     margin: 0 auto;
     line-height: 40px;
 }
+
 
 @media (max-width: 576px) {
     .hero {
@@ -320,44 +300,42 @@
     }
 
     /* section_02 */
-
     .section_02 {
         margin-bottom: 360px;
     }
-    
+
     .section_02 h2 {
         font-size: 20px;
         margin-bottom: 17px;
     }
-    
+
     .section_02 .arrows {
         display: none;
     } 
-
+ 
     .swiper_01 {
-        position: absolute;
+        position: absolute !important;
         width: 140%;
     }
-    
+
     .swiper_01 .thumb {
         height: 218px;
         width: 218px;
     }
-    
+
     .swiper_01 .title_box {
         padding: 10px 0;
     }
-    
+
     .swiper_01 .title_box h3 {
         font-size: 14px;
         margin-bottom: 6px;
     }
-    
+
     .swiper_01 .title_box p {
         font-size: 12px;
     }
 
-        
     /* section_03 */
     .section_03 {
         margin-bottom: 60px;
@@ -371,17 +349,11 @@
 
     /* section_04 */
     .section_04 {
-        margin-bottom: 165px;    
+        margin-bottom: 80px;    
     }
 
     .section_04 h2 {
-        font-size: 24px;
-        font-weight: 600;
-        margin-bottom: 20px;
-    }
-
-    .section_04 .list {
-
+        font-size: 20px;
     }
 
     .section_04 .list li .thumb {
@@ -397,21 +369,19 @@
 
     /* section_05 */
     .section_05 {
-        margin-bottom: 80px;    
+        margin-bottom: 80px;
     }
 
-    .section_05 .text_box h2 {
+    .section_05 .text_box2 h2 {
         font-size: 24px;
-
     }
-    .section_05 .text_box p {
+    .section_05 .text_box2 p {
         font-size: 12px;
         line-height: 1.5;
-        width: 40%;
+        width: 80%;
         margin: 34px auto 26px;
-
     }
-    .section_05 .text_box .btn2 {
+    .section_05 .text_box2 .btn2 {
         display: block;
         width: 180px;
         height: 40px;
@@ -421,6 +391,4 @@
         margin: 0 auto;
         line-height: 40px;
     }
-
-
 }
